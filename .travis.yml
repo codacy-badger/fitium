@@ -1,4 +1,10 @@
 language: node_js
 
-jobs:
-  install: yarn
+node_js:
+  - "10.9.0"
+
+install:
+  yarn
+
+script:
+  false
