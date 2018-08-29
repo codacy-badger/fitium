@@ -8,3 +8,8 @@ install:
 
 script:
   - skip
+
+jobs:
+  include:
+    - stage: "Testing"
+    script: yarn start
