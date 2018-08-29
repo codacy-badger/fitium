@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node --presets es2015 bin/www",
-    "start:dev": "nodemon --exec babel-node bin/www --presets es2015"
+    "start:dev": "nodemon --exec babel-node bin/www --presets es2015",
+    "test": ""
   },
   "dependencies": {
     "express": "^4.16.3"
