@@ -11,9 +11,3 @@ install:
 
 script:
   - skip
-
-jobs:
-  include:
-    - stage: "Testing"
-    name: "Unit testing"
-    script: yarn start
