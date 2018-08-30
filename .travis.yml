@@ -15,4 +15,5 @@ install:
   yarn
 
 script:
-  - skip
+  - yarn clean
+  - yarn build

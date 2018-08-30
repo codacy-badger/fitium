@@ -4,8 +4,11 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node --presets es2015 bin/www",
-    "start:dev": "nodemon --exec babel-node bin/www --presets es2015",
+    "start": "babel-node --presets es2015 ./bin/www",
+    "start:dev": "nodemon --exec babel-node ./bin/www --presets es2015",
+    "start:prod": "node bin/production",
+    "clean": "rm -rf build && mkdir build",
+    "build": "babel -d ./build ./src -s",
     "test": ""
   },
   "dependencies": {
