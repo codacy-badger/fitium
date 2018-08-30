@@ -1,3 +1,4 @@
 const app = require('../build/app').default;
+const appConfig = require('../config/app.config');
 
-app.listen(8080, '127.0.0.1');
+app.listen(appConfig.PORT, appConfig.HOST);
