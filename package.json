@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node --presets es2015 ./bin/www",
     "start:dev": "nodemon --exec babel-node ./bin/www --presets es2015",
-    "start:prod": "node bin/production",
+    "start:prod": "pm2 bin/production",
     "clean": "rm -rf build && mkdir build",
     "build": "babel -d ./build ./src -s",
     "test": "mocha --require babel-core/register ./src/**/*.spec.js"

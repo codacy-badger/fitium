@@ -8,7 +8,7 @@ services:
   - postgres
 
 node_js:
-  - node
+  - "8.11.4"
   - "10.9.0"
 
 before_install:
