@@ -19,3 +19,10 @@ script:
   - yarn build
   - yarn start:prod
   - yarn test
+
+env:
+  global:
+    - CI_NODE_TOTAL=2
+  matrix:
+    - CI_NODE_INDEX=0
+    - CI_NODE_INDEX=1
