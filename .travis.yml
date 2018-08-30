@@ -18,3 +18,4 @@ script:
   - yarn clean
   - yarn build
   - yarn start:prod
+  - yarn test
