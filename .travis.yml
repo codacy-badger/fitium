@@ -1,6 +1,5 @@
 os:
   - linux
-  - osx
 
 language: node_js
 
@@ -11,14 +10,17 @@ node_js:
   - node
   - "10.9.0"
 
-install:
-  yarn
+before_script:
+  - yarn
 
 script:
   - yarn clean
   - yarn build
-  - yarn start:prod
+  - yarn start:prod &
   - yarn test
+
+# after_script:
+#   - node kill
 
 env:
   global:
