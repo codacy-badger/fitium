@@ -1,9 +1,14 @@
+os:
+  - linux
+  - osx
+
 language: node_js
 
 services:
   - postgres
 
 node_js:
+  - node
   - "10.9.0"
 
 install:
