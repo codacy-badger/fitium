@@ -20,5 +20,5 @@ before_script:
 script:
   - yarn clean
   - yarn build
-  - yarn start:prod &
+  - yarn start:prod
   - yarn test
