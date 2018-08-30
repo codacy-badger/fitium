@@ -11,6 +11,9 @@ node_js:
   - node
   - "10.9.0"
 
+before_install:
+  - npm install -g pm2
+
 before_script:
   - yarn
 
