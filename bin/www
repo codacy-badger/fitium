@@ -1,4 +1,6 @@
 const app = require('../src/app').default;
 const appConfig = require('../config/app.config');
 
-app.listen(appConfig.PORT, appConfig.HOST);
+app.listen(appConfig.PORT, appConfig.HOST, () => {
+  console.log('Server running on port: 8080');
+});
