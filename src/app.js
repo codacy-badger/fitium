@@ -1,9 +1,7 @@
 import express from 'express';
 import helmet from 'helmet';
-import models from './models';
-//
+import models from './database';
 import { loggerStream } from './utilities/logger';
-
 
 const app = express();
 
