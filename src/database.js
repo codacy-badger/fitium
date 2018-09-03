@@ -7,7 +7,9 @@ const sequelize = new Sequelize('fitium', 'postgres', 'postgres', {
   },
 });
 
-const models = {};
+const models = {
+  User: sequelize.import('./users/user.model'),
+};
 
 models.sequelize = sequelize;
 models.Sequelize = Sequelize;

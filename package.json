@@ -12,6 +12,7 @@
     "test": "mocha --require babel-core/register ./src/**/*.spec.js"
   },
   "dependencies": {
+    "bcrypt": "^3.0.0",
     "express": "^4.16.3",
     "helmet": "^3.13.0",
     "morgan": "^1.9.0",
